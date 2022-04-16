@@ -1,0 +1,42 @@
+.footer-adress {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.74;
+    letter-spacing: 0.03em;
+    color: var(--header-color);
+}
+  
+.contacts-footer {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--contacts-footer-color);
+    ;
+}
+  
+.footer-color {
+    background-color: var(--hero-footer-backround);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.invitation {
+    color: var(--header-color);
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+
+.footer-box {
+    display: flex;
+    align-items: baseline;
+}
+
+.adress-footer-block {
+    display: block;
+    margin-right: 70px;
+}
