@@ -1,8 +1,8 @@
-.backround-portfolio {
+.portfolio {
     background-color: var(--header-color);
 }
   
-.second-main-portfolio {
+.portfolio__title {
     color: var(--body-color);
     font-weight: 700;
     font-size: 18px;
@@ -11,15 +11,14 @@
     margin-bottom: 4px;
 }
   
-.about-projects {
+.portfolio__description {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.9;
     color: var(--description-color);
 }
-  
-  
-.portfolio-btn {
+   
+.portfolio__btn {
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 22px;
@@ -47,36 +46,32 @@
     }
 }
   
-.portfolio-btn-line {
+.portfolio__buttons {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
   
-.portfolio-btn-margin:not(:last-child) {
+.portfolio__btn_margin:not(:last-child) {
     margin-right: 8px;
 }
   
-.adress-retreats:not(:last-child) {
-    margin-bottom: 9px;
-}
-  
-.portfolio-resume {
+.portfolio__resume {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
   
-.portfolio-resume-card:not(:nth-child(3n)) {
+.portfolio__card:not(:nth-child(3n)) {
     margin-right: 30px;
 }
   
-.portfolio-resume-card:not(:nth-last-child(-n + 3)) {
+.portfolio__card:not(:nth-last-child(-n + 3)) {
     margin-bottom: 30px;
 }
   
   
-.portfolio-content-wrapper {
+.portfolio__wrapper {
     background-color: var(--header-color);
     border-left: 1px solid #E5E5E5;
     border-right: 1px solid #E5E5E5;
@@ -87,25 +82,25 @@
     padding-right: 24px;
 }
   
-.portfolio-link {
+.portfolio__link {
     display: block;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    .portfolio-resume-card &:hover,
-    .portfolio-resume-card &:focus{
+    .portfolio__card &:hover,
+    .portfolio__card &:focus{
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
         0px 4px 4px rgba(0, 0, 0, 0.06), 
         1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 }
       
-.product-thumb { 
+.portfolio__thumb { 
     position: relative;
     overflow: hidden;
 }
   
-.overlay{
+.portfolio__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -122,8 +117,8 @@
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .portfolio-link:hover &,
-    .portfolio-link:focus &{
+    .portfolio__link:hover &,
+    .portfolio__link:focus &{
        transform: translateY(0);
     }
 }

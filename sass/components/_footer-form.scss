@@ -1,9 +1,9 @@
-.footer-flex{ 
+.footer-form { 
     margin-left: auto;
-   }
+}
   
 
-  .form-name{
+.footer-form__name {
     font-family: 'Roboto';
     font-weight: 700;
     text-transform: uppercase;
@@ -12,14 +12,14 @@
     letter-spacing: 0.03em;
     margin-bottom: 20px;
     color: var(--header-color);
-  }
+}
 
-  .form-field{
+.footer-form__field {
     display: flex;
     justify-content: space-between;
-  }
+}
 
-  .form-field input{
+.footer-form__field input{
     width: 358px;
     height: 50px;
     padding: 15px 16px;
@@ -30,9 +30,9 @@
     border-radius: 4px;
     background-color: transparent;
     color: var(--header-color);
-  }
+}
 
-  .footer-form-btn{
+.footer-form__btn {
     display: flex;
     width: 200px;
     height: 50px;
@@ -49,4 +49,13 @@
     align-items: center;
     border: 0;
     cursor: pointer;
-  }
+}
+
+.footer-form__label{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    margin-bottom: 4px;
+    letter-spacing: 0.01em;
+    color: var(--description-color);
+}

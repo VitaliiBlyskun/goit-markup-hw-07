@@ -1,4 +1,10 @@
-.footer-adress {
+.footer {
+    background-color: var(--hero-footer-backround);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__adress_place {
     font-style: normal;
     font-size: 14px;
     line-height: 1.74;
@@ -6,7 +12,7 @@
     color: var(--header-color);
 }
   
-.contacts-footer {
+.footer__adress_contacts {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -14,14 +20,8 @@
     color: var(--contacts-footer-color);
     ;
 }
-  
-.footer-color {
-    background-color: var(--hero-footer-backround);
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
 
-.invitation {
+.footer__invitation {
     color: var(--header-color);
     font-weight: 700;
     margin-bottom: 20px;
@@ -31,12 +31,16 @@
 }
 
 
-.footer-box {
+.footer__box {
     display: flex;
     align-items: baseline;
 }
 
-.adress-footer-block {
+.footer__adress {
     display: block;
     margin-right: 70px;
+}
+
+.footer__adress_retreats:not(:last-child) {
+    margin-bottom: 9px;
 }

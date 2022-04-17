@@ -1,13 +1,13 @@
-.our-advantages{
+.advantages{
     display: flex;
     justify-content: space-between;
 }
 
-.our-advantages-item {
+.advantages__item {
 width: 270px;
 }
 
-.properties {
+.advantages__properties {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
@@ -15,12 +15,12 @@ width: 270px;
     margin-bottom: 10px;
 }
   
-.work-description {
+.advantages__description {
     line-height: 1.71;
     color: var(--description-color);
 }
 
-.our-advantages-icons:not(:last-child) {
+.advantages__icons:not(:last-child) {
     display: flex;
     background-color: var(--portfolio-btn-color);
     width: 270px;

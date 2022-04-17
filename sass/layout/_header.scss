@@ -1,14 +1,10 @@
-.header-container {
+.header__container {
     display:flex;
     align-items: center;
 }
- 
-.navigation {
-    display: flex;
-    align-items: center;
-}
 
-.nav-list {
+
+.header__list {
     display: flex;
     align-items: baseline;
     margin-left: auto;
@@ -32,15 +28,20 @@ img {
    border-bottom: 1px solid #E5E5E5;
 }
 
-.header-nav-margin:not(:last-child) {
+.header__navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header__navigation_margin:not(:last-child) {
     margin-right: 50px;
 }
 
-.header-mail-margin {
+.header__contacts_margin {
     margin-right: 50px;
 }
 
-.menu-elements {
+.header__elements {
     display: block;
     font-weight: 500;
     font-size: 14px;
@@ -52,26 +53,28 @@ img {
     position: relative;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-
-    &.current::after{
-        content:'';
-        position: absolute;
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-        background-color: var(--accent-color);
-        left: 0;
-        bottom: -3px;
-        opacity: 1;
-      }
 }
 
-.current{
+// -як ставити &(аперсант) позаду селектора, якщо вони знаходяться на одному рівні вкладеності???
+.header__elements_current{
     color: var(--accent-color);
 }
 
-.contacts-header { 
+.header__elements_current::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    left: 0;
+    bottom: -3px;
+    opacity: 1;
+  }
+
+//   не получаєся поставити бо є пробел
+
+.header__contacts { 
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -89,24 +92,4 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
-  
-.envelope {
-    margin-right: 10px;
-    fill: currentColor;
-  
-    &:hover,
-    &:focus {
-      fill: currentColor;
-    }
-}
-  
-.smartphone {
-    margin-right: 10px;
-    fill: currentColor;
-
-    &:hover,
-    &:focus {
-      fill: currentColor;
-    } 
-}
-  
+ 

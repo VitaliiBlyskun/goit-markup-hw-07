@@ -1,14 +1,19 @@
-.employees {
+.employee-team {
+    background-color: var(--portfolio-btn-color);
+}
+
+
+.employee-team__list {
     display: flex;
     justify-content: space-between;
 }
 
 
-.employees-card:not(:nth-child(4n)) {
+.employee-team__card:not(:nth-child(4n)) {
     margin-right: 30px;
 }
 
-.employees-content-wrapper{
+.employee-team__wrapper {
     background-color: var(--header-color);
     border-bottom: 1px solid #E5E5E5;
     border-radius: 4px;
@@ -19,7 +24,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team {
+.employee-team__name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -27,7 +32,7 @@
     margin-bottom: 10px;
 }
 
-.about-team {
+.employee-team__occupation {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -36,6 +41,3 @@
     margin-bottom: 16px;
 }
 
-.team-background-color {
-    background-color: var(--portfolio-btn-color);
-}

@@ -1,21 +1,20 @@
-.section-zero-padding {
+.work-direction {
    padding-top: 0;
 }
 
-.about-work {
+.work-direction__about {
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
 
-.examples{
+.work-direction__examples {
     position: relative;
     width: 370px;
     height: 294px;
     max-width: 100%;
 }
 
-.work-elements {
+.work-direction__elements {
     position: absolute;
     width: 370px;
     height: 70px;
@@ -23,7 +22,7 @@
     bottom: 0;
 }
 
-.word-work-elements {
+.work-direction__elements_words {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -35,3 +34,5 @@
     padding-left: 83px;
     padding-top: 27px;
 }
+
+
